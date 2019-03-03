@@ -17,9 +17,15 @@ public class PlateImpl implements Plate {
 	// output: a new PlateImpl object
 	
 	public PlateImpl(Sushi contents, Plate.Color color, double price) {
+		if (contents == null) {
+			this.contents = null;
+			this.price = price;
+			this.color = color;
+		} else {
 		this.contents = contents;
 		this.price = price;
 		this.color = color;
+	}
 	}
 	
 	
