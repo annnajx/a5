@@ -11,7 +11,8 @@ public interface Plate {
 	Sushi getContents(); 
 	Sushi removeContents(); 
 	void setContents(Sushi s) throws PlatePriceException; 
-	boolean hasContents(); double getPrice(); 
+	boolean hasContents(); 
+	double getPrice(); 
 	Plate.Color getColor(); 
 	double getProfit(); 
 

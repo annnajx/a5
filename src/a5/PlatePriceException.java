@@ -15,6 +15,7 @@ public class PlatePriceException extends Exception {
 	// Initialize a constructor that takes in a price and returns an exception message
 	public PlatePriceException(double platePrice) {
 		super("Illegal plate price");
+		
 		illegalPrice = platePrice;
 	}
 	

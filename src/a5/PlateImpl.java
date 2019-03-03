@@ -1,6 +1,5 @@
 package a5;
 
-import a5.Nigiri.NigiriType;
 
 // Create a PlateImpl class that implements the Plate interface
 public class PlateImpl implements Plate {
@@ -8,7 +7,7 @@ public class PlateImpl implements Plate {
 	// Declare fields
 	
 	protected Sushi contents;
-	protected Color color;
+	protected Plate.Color color;
 	protected double price;
 	
 	
@@ -17,7 +16,7 @@ public class PlateImpl implements Plate {
 	// input: Sushi, Color, double
 	// output: a new PlateImpl object
 	
-	public PlateImpl(Sushi contents, Color color, double price) {
+	public PlateImpl(Sushi contents, Plate.Color color, double price) {
 		this.contents = contents;
 		this.price = price;
 		this.color = color;
