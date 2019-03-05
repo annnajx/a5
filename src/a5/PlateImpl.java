@@ -105,7 +105,7 @@ public class PlateImpl implements Plate {
 		if (contents == null) {
 		return 0;
 		} else {
-		return Math.round(price - contents.getCost() * 100.0) / 100.0;
+		return Math.round((price - contents.getCost()) * 100.0) / 100.0;
 		}
 	}		
 
