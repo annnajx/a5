@@ -21,7 +21,7 @@ public class PlateImpl implements Plate {
 			this.contents = null;
 			this.price = price;
 			this.color = color;
-		} if (price < contents.getCost()) {
+		} else if (price < contents.getCost()) {
 			throw new PlatePriceException(price);
 		} if (color == Plate.Color.GOLD && price < 5 ) {
 			throw new IllegalArgumentException();
