@@ -9,11 +9,7 @@ public class GoldPlate extends PlateImpl {
 		
 		super (contents, Plate.Color.GOLD, price);
 		
-		if (price < 5) {
-			throw new IllegalArgumentException();
-		}
-		if (contents.getCost() > price) {
-			throw new PlatePriceException(price);
-		}
+		
+		
 	}
 }

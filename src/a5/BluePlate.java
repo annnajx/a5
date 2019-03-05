@@ -8,9 +8,7 @@ public class BluePlate extends PlateImpl {
 			
 			super (contents, Plate.Color.BLUE, 4);
 			
-			if (contents.getCost() > 4) {
-				throw new PlatePriceException(4);
-			}
+			
 			
 		}
 

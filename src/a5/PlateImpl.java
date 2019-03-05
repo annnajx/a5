@@ -16,12 +16,17 @@ public class PlateImpl implements Plate {
 	// input: Sushi, Color, double
 	// output: a new PlateImpl object
 	
-	public PlateImpl(Sushi contents, Plate.Color color, double price) {
+	public PlateImpl (Sushi contents, Plate.Color color, double price) throws PlatePriceException, IllegalArgumentException {
 		if (contents == null) {
 			this.contents = null;
 			this.price = price;
 			this.color = color;
-		} else {
+		} if (price < contents.getCost()) {
+			throw new PlatePriceException(price);
+		} if (color == Plate.Color.GOLD && price < 5 ) {
+			throw new IllegalArgumentException();
+		}
+		else {
 		this.contents = contents;
 		this.price = price;
 		this.color = color;
